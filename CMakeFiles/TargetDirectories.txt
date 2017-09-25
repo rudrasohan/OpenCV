@@ -1,0 +1,4 @@
+/home/sohan/OpenCV/CMakeFiles/edit_cache.dir
+/home/sohan/OpenCV/CMakeFiles/video.dir
+/home/sohan/OpenCV/CMakeFiles/rebuild_cache.dir
+/home/sohan/OpenCV/CMakeFiles/canny.dir
