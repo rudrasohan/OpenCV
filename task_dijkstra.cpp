@@ -19,7 +19,7 @@ public:
 };
 int rx,ry,gx,gy;
 bool operator<(node a,node b) {return a.cost > b.cost ? true : false;}
-
+ 
 int isvalid(Mat img,int i,int j)
 {
   if(i<0 || j<0 || i>=img.rows || j>=img.cols)
