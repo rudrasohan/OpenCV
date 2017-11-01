@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sohan/OpenCV
+CMAKE_SOURCE_DIR = /home/sohan/projects/OpenCV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sohan/OpenCV
+CMAKE_BINARY_DIR = /home/sohan/projects/OpenCV
 
 #=============================================================================
 # Target rules for target CMakeFiles/video.dir
@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/sohan/OpenCV
 CMakeFiles/video.dir/all:
 	$(MAKE) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/depend
 	$(MAKE) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sohan/OpenCV/CMakeFiles --progress-num=3,4 "Built target video"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sohan/projects/OpenCV/CMakeFiles --progress-num=5,6 "Built target video"
 .PHONY : CMakeFiles/video.dir/all
 
 # Include target in all.
@@ -76,9 +76,9 @@ all: CMakeFiles/video.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/video.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sohan/OpenCV/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sohan/projects/OpenCV/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/video.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sohan/OpenCV/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sohan/projects/OpenCV/CMakeFiles 0
 .PHONY : CMakeFiles/video.dir/rule
 
 # Convenience name for target.
@@ -103,7 +103,7 @@ clean: CMakeFiles/video.dir/clean
 CMakeFiles/canny.dir/all:
 	$(MAKE) -f CMakeFiles/canny.dir/build.make CMakeFiles/canny.dir/depend
 	$(MAKE) -f CMakeFiles/canny.dir/build.make CMakeFiles/canny.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sohan/OpenCV/CMakeFiles --progress-num=1,2 "Built target canny"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sohan/projects/OpenCV/CMakeFiles --progress-num=1,2 "Built target canny"
 .PHONY : CMakeFiles/canny.dir/all
 
 # Include target in all.
@@ -113,9 +113,9 @@ all: CMakeFiles/canny.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/canny.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sohan/OpenCV/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sohan/projects/OpenCV/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/canny.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sohan/OpenCV/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sohan/projects/OpenCV/CMakeFiles 0
 .PHONY : CMakeFiles/canny.dir/rule
 
 # Convenience name for target.
@@ -130,6 +130,80 @@ CMakeFiles/canny.dir/clean:
 
 # clean rule for target.
 clean: CMakeFiles/canny.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/watershed.dir
+
+# All Build rule for target.
+CMakeFiles/watershed.dir/all:
+	$(MAKE) -f CMakeFiles/watershed.dir/build.make CMakeFiles/watershed.dir/depend
+	$(MAKE) -f CMakeFiles/watershed.dir/build.make CMakeFiles/watershed.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sohan/projects/OpenCV/CMakeFiles --progress-num=7,8 "Built target watershed"
+.PHONY : CMakeFiles/watershed.dir/all
+
+# Include target in all.
+all: CMakeFiles/watershed.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/watershed.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sohan/projects/OpenCV/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/watershed.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sohan/projects/OpenCV/CMakeFiles 0
+.PHONY : CMakeFiles/watershed.dir/rule
+
+# Convenience name for target.
+watershed: CMakeFiles/watershed.dir/rule
+
+.PHONY : watershed
+
+# clean rule for target.
+CMakeFiles/watershed.dir/clean:
+	$(MAKE) -f CMakeFiles/watershed.dir/build.make CMakeFiles/watershed.dir/clean
+.PHONY : CMakeFiles/watershed.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/watershed.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/convex_hull.dir
+
+# All Build rule for target.
+CMakeFiles/convex_hull.dir/all:
+	$(MAKE) -f CMakeFiles/convex_hull.dir/build.make CMakeFiles/convex_hull.dir/depend
+	$(MAKE) -f CMakeFiles/convex_hull.dir/build.make CMakeFiles/convex_hull.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sohan/projects/OpenCV/CMakeFiles --progress-num=3,4 "Built target convex_hull"
+.PHONY : CMakeFiles/convex_hull.dir/all
+
+# Include target in all.
+all: CMakeFiles/convex_hull.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/convex_hull.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sohan/projects/OpenCV/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/convex_hull.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sohan/projects/OpenCV/CMakeFiles 0
+.PHONY : CMakeFiles/convex_hull.dir/rule
+
+# Convenience name for target.
+convex_hull: CMakeFiles/convex_hull.dir/rule
+
+.PHONY : convex_hull
+
+# clean rule for target.
+CMakeFiles/convex_hull.dir/clean:
+	$(MAKE) -f CMakeFiles/convex_hull.dir/build.make CMakeFiles/convex_hull.dir/clean
+.PHONY : CMakeFiles/convex_hull.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/convex_hull.dir/clean
 
 .PHONY : clean
 

@@ -1,4 +1,6 @@
-/home/sohan/OpenCV/CMakeFiles/edit_cache.dir
-/home/sohan/OpenCV/CMakeFiles/video.dir
-/home/sohan/OpenCV/CMakeFiles/rebuild_cache.dir
-/home/sohan/OpenCV/CMakeFiles/canny.dir
+/home/sohan/projects/OpenCV/CMakeFiles/edit_cache.dir
+/home/sohan/projects/OpenCV/CMakeFiles/video.dir
+/home/sohan/projects/OpenCV/CMakeFiles/rebuild_cache.dir
+/home/sohan/projects/OpenCV/CMakeFiles/canny.dir
+/home/sohan/projects/OpenCV/CMakeFiles/watershed.dir
+/home/sohan/projects/OpenCV/CMakeFiles/convex_hull.dir

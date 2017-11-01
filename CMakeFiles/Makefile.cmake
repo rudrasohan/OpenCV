@@ -50,4 +50,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/video.dir/DependInfo.cmake"
   "CMakeFiles/canny.dir/DependInfo.cmake"
+  "CMakeFiles/watershed.dir/DependInfo.cmake"
+  "CMakeFiles/convex_hull.dir/DependInfo.cmake"
   )

@@ -48,18 +48,18 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/sohan/OpenCV
+CMAKE_SOURCE_DIR = /home/sohan/projects/OpenCV
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/sohan/OpenCV
+CMAKE_BINARY_DIR = /home/sohan/projects/OpenCV
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sohan/OpenCV/CMakeFiles /home/sohan/OpenCV/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sohan/projects/OpenCV/CMakeFiles /home/sohan/projects/OpenCV/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sohan/OpenCV/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sohan/projects/OpenCV/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -136,6 +136,32 @@ canny/fast:
 	$(MAKE) -f CMakeFiles/canny.dir/build.make CMakeFiles/canny.dir/build
 .PHONY : canny/fast
 
+#=============================================================================
+# Target rules for targets named watershed
+
+# Build rule for target.
+watershed: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 watershed
+.PHONY : watershed
+
+# fast build rule for target.
+watershed/fast:
+	$(MAKE) -f CMakeFiles/watershed.dir/build.make CMakeFiles/watershed.dir/build
+.PHONY : watershed/fast
+
+#=============================================================================
+# Target rules for targets named convex_hull
+
+# Build rule for target.
+convex_hull: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 convex_hull
+.PHONY : convex_hull
+
+# fast build rule for target.
+convex_hull/fast:
+	$(MAKE) -f CMakeFiles/convex_hull.dir/build.make CMakeFiles/convex_hull.dir/build
+.PHONY : convex_hull/fast
+
 canny.o: canny.cpp.o
 
 .PHONY : canny.o
@@ -162,6 +188,33 @@ canny.s: canny.cpp.s
 canny.cpp.s:
 	$(MAKE) -f CMakeFiles/canny.dir/build.make CMakeFiles/canny.dir/canny.cpp.s
 .PHONY : canny.cpp.s
+
+convex_hull.o: convex_hull.cpp.o
+
+.PHONY : convex_hull.o
+
+# target to build an object file
+convex_hull.cpp.o:
+	$(MAKE) -f CMakeFiles/convex_hull.dir/build.make CMakeFiles/convex_hull.dir/convex_hull.cpp.o
+.PHONY : convex_hull.cpp.o
+
+convex_hull.i: convex_hull.cpp.i
+
+.PHONY : convex_hull.i
+
+# target to preprocess a source file
+convex_hull.cpp.i:
+	$(MAKE) -f CMakeFiles/convex_hull.dir/build.make CMakeFiles/convex_hull.dir/convex_hull.cpp.i
+.PHONY : convex_hull.cpp.i
+
+convex_hull.s: convex_hull.cpp.s
+
+.PHONY : convex_hull.s
+
+# target to generate assembly for a file
+convex_hull.cpp.s:
+	$(MAKE) -f CMakeFiles/convex_hull.dir/build.make CMakeFiles/convex_hull.dir/convex_hull.cpp.s
+.PHONY : convex_hull.cpp.s
 
 video.o: video.cpp.o
 
@@ -190,6 +243,33 @@ video.cpp.s:
 	$(MAKE) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/video.cpp.s
 .PHONY : video.cpp.s
 
+watershed.o: watershed.cpp.o
+
+.PHONY : watershed.o
+
+# target to build an object file
+watershed.cpp.o:
+	$(MAKE) -f CMakeFiles/watershed.dir/build.make CMakeFiles/watershed.dir/watershed.cpp.o
+.PHONY : watershed.cpp.o
+
+watershed.i: watershed.cpp.i
+
+.PHONY : watershed.i
+
+# target to preprocess a source file
+watershed.cpp.i:
+	$(MAKE) -f CMakeFiles/watershed.dir/build.make CMakeFiles/watershed.dir/watershed.cpp.i
+.PHONY : watershed.cpp.i
+
+watershed.s: watershed.cpp.s
+
+.PHONY : watershed.s
+
+# target to generate assembly for a file
+watershed.cpp.s:
+	$(MAKE) -f CMakeFiles/watershed.dir/build.make CMakeFiles/watershed.dir/watershed.cpp.s
+.PHONY : watershed.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -200,12 +280,20 @@ help:
 	@echo "... video"
 	@echo "... rebuild_cache"
 	@echo "... canny"
+	@echo "... watershed"
+	@echo "... convex_hull"
 	@echo "... canny.o"
 	@echo "... canny.i"
 	@echo "... canny.s"
+	@echo "... convex_hull.o"
+	@echo "... convex_hull.i"
+	@echo "... convex_hull.s"
 	@echo "... video.o"
 	@echo "... video.i"
 	@echo "... video.s"
+	@echo "... watershed.o"
+	@echo "... watershed.i"
+	@echo "... watershed.s"
 .PHONY : help
 
 
