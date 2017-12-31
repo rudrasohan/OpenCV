@@ -1,6 +1,8 @@
 /home/sohan/projects/OpenCV/CMakeFiles/edit_cache.dir
-/home/sohan/projects/OpenCV/CMakeFiles/video.dir
+/home/sohan/projects/OpenCV/CMakeFiles/obj_detect.dir
+/home/sohan/projects/OpenCV/CMakeFiles/task_dijkstra.dir
 /home/sohan/projects/OpenCV/CMakeFiles/rebuild_cache.dir
 /home/sohan/projects/OpenCV/CMakeFiles/canny.dir
-/home/sohan/projects/OpenCV/CMakeFiles/watershed.dir
-/home/sohan/projects/OpenCV/CMakeFiles/convex_hull.dir
+/home/sohan/projects/OpenCV/CMakeFiles/video.dir
+/home/sohan/projects/OpenCV/CMakeFiles/tlr.dir
+/home/sohan/projects/OpenCV/CMakeFiles/task_Astar.dir
