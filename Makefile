@@ -111,17 +111,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named video
+# Target rules for targets named obj_detect
 
 # Build rule for target.
-video: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 video
-.PHONY : video
+obj_detect: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 obj_detect
+.PHONY : obj_detect
 
 # fast build rule for target.
-video/fast:
-	$(MAKE) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/build
-.PHONY : video/fast
+obj_detect/fast:
+	$(MAKE) -f CMakeFiles/obj_detect.dir/build.make CMakeFiles/obj_detect.dir/build
+.PHONY : obj_detect/fast
+
+#=============================================================================
+# Target rules for targets named task_dijkstra
+
+# Build rule for target.
+task_dijkstra: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 task_dijkstra
+.PHONY : task_dijkstra
+
+# fast build rule for target.
+task_dijkstra/fast:
+	$(MAKE) -f CMakeFiles/task_dijkstra.dir/build.make CMakeFiles/task_dijkstra.dir/build
+.PHONY : task_dijkstra/fast
 
 #=============================================================================
 # Target rules for targets named canny
@@ -137,30 +150,43 @@ canny/fast:
 .PHONY : canny/fast
 
 #=============================================================================
-# Target rules for targets named watershed
+# Target rules for targets named video
 
 # Build rule for target.
-watershed: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 watershed
-.PHONY : watershed
+video: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 video
+.PHONY : video
 
 # fast build rule for target.
-watershed/fast:
-	$(MAKE) -f CMakeFiles/watershed.dir/build.make CMakeFiles/watershed.dir/build
-.PHONY : watershed/fast
+video/fast:
+	$(MAKE) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/build
+.PHONY : video/fast
 
 #=============================================================================
-# Target rules for targets named convex_hull
+# Target rules for targets named tlr
 
 # Build rule for target.
-convex_hull: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 convex_hull
-.PHONY : convex_hull
+tlr: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 tlr
+.PHONY : tlr
 
 # fast build rule for target.
-convex_hull/fast:
-	$(MAKE) -f CMakeFiles/convex_hull.dir/build.make CMakeFiles/convex_hull.dir/build
-.PHONY : convex_hull/fast
+tlr/fast:
+	$(MAKE) -f CMakeFiles/tlr.dir/build.make CMakeFiles/tlr.dir/build
+.PHONY : tlr/fast
+
+#=============================================================================
+# Target rules for targets named task_Astar
+
+# Build rule for target.
+task_Astar: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 task_Astar
+.PHONY : task_Astar
+
+# fast build rule for target.
+task_Astar/fast:
+	$(MAKE) -f CMakeFiles/task_Astar.dir/build.make CMakeFiles/task_Astar.dir/build
+.PHONY : task_Astar/fast
 
 canny.o: canny.cpp.o
 
@@ -189,32 +215,113 @@ canny.cpp.s:
 	$(MAKE) -f CMakeFiles/canny.dir/build.make CMakeFiles/canny.dir/canny.cpp.s
 .PHONY : canny.cpp.s
 
-convex_hull.o: convex_hull.cpp.o
+obj_detect.o: obj_detect.cpp.o
 
-.PHONY : convex_hull.o
+.PHONY : obj_detect.o
 
 # target to build an object file
-convex_hull.cpp.o:
-	$(MAKE) -f CMakeFiles/convex_hull.dir/build.make CMakeFiles/convex_hull.dir/convex_hull.cpp.o
-.PHONY : convex_hull.cpp.o
+obj_detect.cpp.o:
+	$(MAKE) -f CMakeFiles/obj_detect.dir/build.make CMakeFiles/obj_detect.dir/obj_detect.cpp.o
+.PHONY : obj_detect.cpp.o
 
-convex_hull.i: convex_hull.cpp.i
+obj_detect.i: obj_detect.cpp.i
 
-.PHONY : convex_hull.i
+.PHONY : obj_detect.i
 
 # target to preprocess a source file
-convex_hull.cpp.i:
-	$(MAKE) -f CMakeFiles/convex_hull.dir/build.make CMakeFiles/convex_hull.dir/convex_hull.cpp.i
-.PHONY : convex_hull.cpp.i
+obj_detect.cpp.i:
+	$(MAKE) -f CMakeFiles/obj_detect.dir/build.make CMakeFiles/obj_detect.dir/obj_detect.cpp.i
+.PHONY : obj_detect.cpp.i
 
-convex_hull.s: convex_hull.cpp.s
+obj_detect.s: obj_detect.cpp.s
 
-.PHONY : convex_hull.s
+.PHONY : obj_detect.s
 
 # target to generate assembly for a file
-convex_hull.cpp.s:
-	$(MAKE) -f CMakeFiles/convex_hull.dir/build.make CMakeFiles/convex_hull.dir/convex_hull.cpp.s
-.PHONY : convex_hull.cpp.s
+obj_detect.cpp.s:
+	$(MAKE) -f CMakeFiles/obj_detect.dir/build.make CMakeFiles/obj_detect.dir/obj_detect.cpp.s
+.PHONY : obj_detect.cpp.s
+
+task_Astar.o: task_Astar.cpp.o
+
+.PHONY : task_Astar.o
+
+# target to build an object file
+task_Astar.cpp.o:
+	$(MAKE) -f CMakeFiles/task_Astar.dir/build.make CMakeFiles/task_Astar.dir/task_Astar.cpp.o
+.PHONY : task_Astar.cpp.o
+
+task_Astar.i: task_Astar.cpp.i
+
+.PHONY : task_Astar.i
+
+# target to preprocess a source file
+task_Astar.cpp.i:
+	$(MAKE) -f CMakeFiles/task_Astar.dir/build.make CMakeFiles/task_Astar.dir/task_Astar.cpp.i
+.PHONY : task_Astar.cpp.i
+
+task_Astar.s: task_Astar.cpp.s
+
+.PHONY : task_Astar.s
+
+# target to generate assembly for a file
+task_Astar.cpp.s:
+	$(MAKE) -f CMakeFiles/task_Astar.dir/build.make CMakeFiles/task_Astar.dir/task_Astar.cpp.s
+.PHONY : task_Astar.cpp.s
+
+task_dijkstra.o: task_dijkstra.cpp.o
+
+.PHONY : task_dijkstra.o
+
+# target to build an object file
+task_dijkstra.cpp.o:
+	$(MAKE) -f CMakeFiles/task_dijkstra.dir/build.make CMakeFiles/task_dijkstra.dir/task_dijkstra.cpp.o
+.PHONY : task_dijkstra.cpp.o
+
+task_dijkstra.i: task_dijkstra.cpp.i
+
+.PHONY : task_dijkstra.i
+
+# target to preprocess a source file
+task_dijkstra.cpp.i:
+	$(MAKE) -f CMakeFiles/task_dijkstra.dir/build.make CMakeFiles/task_dijkstra.dir/task_dijkstra.cpp.i
+.PHONY : task_dijkstra.cpp.i
+
+task_dijkstra.s: task_dijkstra.cpp.s
+
+.PHONY : task_dijkstra.s
+
+# target to generate assembly for a file
+task_dijkstra.cpp.s:
+	$(MAKE) -f CMakeFiles/task_dijkstra.dir/build.make CMakeFiles/task_dijkstra.dir/task_dijkstra.cpp.s
+.PHONY : task_dijkstra.cpp.s
+
+tlr.o: tlr.cpp.o
+
+.PHONY : tlr.o
+
+# target to build an object file
+tlr.cpp.o:
+	$(MAKE) -f CMakeFiles/tlr.dir/build.make CMakeFiles/tlr.dir/tlr.cpp.o
+.PHONY : tlr.cpp.o
+
+tlr.i: tlr.cpp.i
+
+.PHONY : tlr.i
+
+# target to preprocess a source file
+tlr.cpp.i:
+	$(MAKE) -f CMakeFiles/tlr.dir/build.make CMakeFiles/tlr.dir/tlr.cpp.i
+.PHONY : tlr.cpp.i
+
+tlr.s: tlr.cpp.s
+
+.PHONY : tlr.s
+
+# target to generate assembly for a file
+tlr.cpp.s:
+	$(MAKE) -f CMakeFiles/tlr.dir/build.make CMakeFiles/tlr.dir/tlr.cpp.s
+.PHONY : tlr.cpp.s
 
 video.o: video.cpp.o
 
@@ -243,33 +350,6 @@ video.cpp.s:
 	$(MAKE) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/video.cpp.s
 .PHONY : video.cpp.s
 
-watershed.o: watershed.cpp.o
-
-.PHONY : watershed.o
-
-# target to build an object file
-watershed.cpp.o:
-	$(MAKE) -f CMakeFiles/watershed.dir/build.make CMakeFiles/watershed.dir/watershed.cpp.o
-.PHONY : watershed.cpp.o
-
-watershed.i: watershed.cpp.i
-
-.PHONY : watershed.i
-
-# target to preprocess a source file
-watershed.cpp.i:
-	$(MAKE) -f CMakeFiles/watershed.dir/build.make CMakeFiles/watershed.dir/watershed.cpp.i
-.PHONY : watershed.cpp.i
-
-watershed.s: watershed.cpp.s
-
-.PHONY : watershed.s
-
-# target to generate assembly for a file
-watershed.cpp.s:
-	$(MAKE) -f CMakeFiles/watershed.dir/build.make CMakeFiles/watershed.dir/watershed.cpp.s
-.PHONY : watershed.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -277,23 +357,31 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... video"
+	@echo "... obj_detect"
+	@echo "... task_dijkstra"
 	@echo "... rebuild_cache"
 	@echo "... canny"
-	@echo "... watershed"
-	@echo "... convex_hull"
+	@echo "... video"
+	@echo "... tlr"
+	@echo "... task_Astar"
 	@echo "... canny.o"
 	@echo "... canny.i"
 	@echo "... canny.s"
-	@echo "... convex_hull.o"
-	@echo "... convex_hull.i"
-	@echo "... convex_hull.s"
+	@echo "... obj_detect.o"
+	@echo "... obj_detect.i"
+	@echo "... obj_detect.s"
+	@echo "... task_Astar.o"
+	@echo "... task_Astar.i"
+	@echo "... task_Astar.s"
+	@echo "... task_dijkstra.o"
+	@echo "... task_dijkstra.i"
+	@echo "... task_dijkstra.s"
+	@echo "... tlr.o"
+	@echo "... tlr.i"
+	@echo "... tlr.s"
 	@echo "... video.o"
 	@echo "... video.i"
 	@echo "... video.s"
-	@echo "... watershed.o"
-	@echo "... watershed.i"
-	@echo "... watershed.s"
 .PHONY : help
 
 
