@@ -20,7 +20,7 @@ int main(int argc, char **argv)
   cv::findContours(imgGrayScale, contours, hierarchy, CV_RETR_TREE, CV_CHAIN_APPROX_SIMPLE, cv::Point(0, 0));
   std::vector<std::vector<cv::Point> > result(contours.size());
   int thickness = 2;
-  int lineType = 8;
+  int lineType = 7;
   for(int i = 0;i < contours.size();i++)
   {
   	int len = cv::arcLength(contours[i], true);
@@ -54,7 +54,24 @@ int main(int argc, char **argv)
   		cv::line(IplImage,p[1],p[2],cv::Scalar(0, 255, 0),thickness,lineType);
   		cv::line(IplImage,p[2],p[3],cv::Scalar(0, 255, 0),thickness,lineType);
   		cv::line(IplImage,p[3],p[0],cv::Scalar(0, 255, 0),thickness,lineType);
-  	 }
+  	}
+    if(result[i].size() == 7)
+    {
+      std::cout<<"HEPTAGON"<<std::endl;
+      cv::Point p[7];
+      for(int j = 0;j<7;j++)
+      {
+        p[j] = result[i][j];
+      }
+        
+      cv::line(IplImage,p[0],p[1],cv::Scalar(0, 0, 255),thickness,lineType);
+      cv::line(IplImage,p[1],p[2],cv::Scalar(0, 0, 255),thickness,lineType);
+      cv::line(IplImage,p[2],p[3],cv::Scalar(0, 0, 255),thickness,lineType);
+      cv::line(IplImage,p[3],p[4],cv::Scalar(0, 0, 255),thickness,lineType);
+      cv::line(IplImage,p[4],p[5],cv::Scalar(0, 0, 255),thickness,lineType);
+      cv::line(IplImage,p[5],p[6],cv::Scalar(0, 0, 255),thickness,lineType);
+      cv::line(IplImage,p[6],p[0],cv::Scalar(0, 0, 255),thickness,lineType);
+    }
 
   }
   cv::namedWindow("Final", cv::WINDOW_AUTOSIZE );
