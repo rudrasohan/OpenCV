@@ -22,7 +22,7 @@ std::vector<cv::Point> extractpoints(cv::Mat img)
 		for (int x = 0; x < img.cols; ++x)
 		{
 			temp = img.at<uchar>(cv::Point(x, y));
-			if(temp == cv::Scalar(255))
+			if(temp.val[0] >= 128)
 				p.push_back(cv::Point(x, y));
 		}
 	}
