@@ -67,9 +67,9 @@ void convexHull(cv::Mat Image)
 	}
 	int thickness = 2;
   	int lineType = 7;
-	for (int i = 0; i < hull.size()-1; ++i)
+	for (int i = 0; i < hull.size(); ++i)
 	{
-		cv::line(Image,hull[i],hull[i+1],cv::Scalar(255, 0, 0 ),thickness,lineType);
+		cv::line(Image,hull[i%hull.size()],hull[(i+1)%hull.size()],cv::Scalar(255, 0, 0 ),thickness,lineType);
 	}
 	cv::namedWindow("Convex_Hull", cv::WINDOW_AUTOSIZE );
 	cv::imshow("Convex_Hull",Image);
