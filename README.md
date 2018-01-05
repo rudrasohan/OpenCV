@@ -1,4 +1,7 @@
 # OpenCV
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/cda8a6b823a843b7b8b85e11a5f86289)](https://www.codacy.com/app/sohanrudra/OpenCV?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=rudrasohan/OpenCV&amp;utm_campaign=Badge_Grade)
+
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/587ef792b3234647bd22f87008329384)](https://www.codacy.com/app/sohanrudra/OpenCV?utm_source=github.com&utm_medium=referral&utm_content=rudrasohan/OpenCV&utm_campaign=badger)
+
 
 Repostiory for keeping all image processing algorithms.
